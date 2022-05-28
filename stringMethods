@@ -3,9 +3,25 @@ var string2 = "learn backend development";
 
 /******* all string methods*****/
 
-1. concat: joins two different strings -->
-string1.concat(string2);
-2. includes: it returns true if the given word is in the string, else false
-console.log(string1.includes("forntend"));
-- true
+// 1. concat: joins two different strings -->
+// string1.concat(string2);
+// 2. includes: it returns true if the given word is in the string, else false
+// console.log(string1.includes("forntend"));
+// - true
 
+// javascript currying 
+
+function makeCurry(){
+    const topConst = "Supratim";
+    function innerFunction(num){
+      console.log(topConst, num)
+    }
+    return innerFunction;
+  }
+  
+  makeCurry()(25);
+ 
+//The inner most function can access all three scopes ie. global scope, makeCurry function scope and inner function scope 
+//variables
+
+//
