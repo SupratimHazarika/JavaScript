@@ -1,0 +1,24 @@
+Difference between var, let and const 
+1.
+   {var a = 10}
+   console.log(a) // 10
+   var is global scoped
+   {let a = 10}
+   console.log(a) // uncaght error
+   let is block scoped
+   {const a = 10}
+   console.log(a) // uncaght error
+   const is block scoped
+   
+ 2. var a= 10,
+    var a = 15,
+    console.log(a) // 15
+    var can be redeclared
+    
+    let and const can't be redeclared, if done uncaught a is already declared will come.
+    
+ 3. var and let can be reassigned 
+ 
+ 4. Const has to be initialized, let and var does not.
+    
+    
