@@ -20,5 +20,25 @@ Difference between var, let and const
  3. var and let can be reassigned 
  
  4. Const has to be initialized, let and var does not.
+ 
+ 5. count the number of occurence of a number in an array
+ 
+ const array = [1,2,4,6,4,6];
+        
+ function countOccurance(arr){
+    arr.sort();
+    let count = {}
+    for(const element of arr){
+        if(count[element]){
+            count[element] = count[element]+1
+        }
+        else {
+            count[element] = 1;
+        }
+    }
+    return count;
+ }
+    
+console.log(countOccurance(array));
     
     
